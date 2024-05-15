@@ -81,6 +81,6 @@ window.onload = function () {
 // If you wish to change the number of characters in a "case", you need to change the line below, changing query.substr() to n+1, n being the number of characters.
 // This ensures that when you search for something, the whole of your idenfier and the space between the identifier and query are removed.
 
-function register(cmd, cb) {
-    commands.push(['/' + cmd, cb]);
+function register(cmd, desc, cb) {
+    commands.push(['/' + cmd, cb, desc]);
 }

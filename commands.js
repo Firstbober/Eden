@@ -1,29 +1,30 @@
 // Notepad
-register("n", (text) => {
+register("n", "notepad", (text) => {
   notepad_add_text(text);
 })
 
 // Google
-register("g", (text) => {
+register("g", "google", (text) => {
   window.location = "https://www.google.com/search?q=" + text;
 })
 
 // Mangadex
-register("m", (text) => {
+register("m", "mangadex", (text) => {
   window.location = "https://mangadex.org/search?q=" + text;
 })
 
 // Youtube
-register("y", (text) => {
+register("y", "youtube", (text) => {
   window.location = "https://www.youtube.com/results?search_query=" + text;
 })
 
 // Capitalize My Title
-register("c", (text) => {
+register("c", "capitalize my title", (text) => {
   window.location = "https://capitalizemytitle.com/";
 })
 
 // 4chan /a/
-register("4a", (text) => {
+register("4a", "4chan /a/", (text) => {
   window.location = "https://boards.4chan.org/a";
 })
+
